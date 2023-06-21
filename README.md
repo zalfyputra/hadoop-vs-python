@@ -1,8 +1,7 @@
-# WordCount Program
+# Hadoop vs Python
+This project aims to compare the performance and scalability of Word Count MapReduce programs implemented in Hadoop and Python, focusing on various data sizes. By analyzing the execution time and resource utilization of both implementations, we seek to understand how these technologies handle different data volumes.
 
-This program is used to count the frequency of each word in a given set of documents, in this case a given set of TXT files. The program consists of two main stages: the Map stage and the Reduce stage.
-
-SBD Group 3:
+Made by SBD 01 Group 3:
 - Cecilia Inez Reva Manurung - 2106636994
 - Gemilang Bagas Ramadhani - 2006535205
 - Laode Alif Ma'sum Sidrajat Raja Ika - 2106731213
@@ -19,17 +18,17 @@ SBD Group 3:
 By Festus Morumbasi<br>
 https://medium.com/@festusmorumbasi/installing-hadoop-on-ubuntu-20-04-4610b6e0391e
 
-#### Step 1: Install Java and other dependencies
+### Step 1: Install Java and other dependencies
 Update system
 ```
 sudo apt update
 ```
-Install  Java 1.8
+Install  Java 1.8.0_132
 ```
 sudo apt install openjdk-8-jdk -y
 ```
 
-#### Step 2: Install OpenSSH
+### Step 2: Install OpenSSH
 Install the OpenSSH server and client
 ```
 sudo apt install openssh-server openssh-client -y
@@ -51,7 +50,7 @@ Verify if the password-less SSH is functional.
 ssh localhost
 ```
 
-#### Step 3: Install Hadoop
+### Step 3: Install Hadoop
 Download Hadoop 3.3.2
 ```
 wget https://downloads.apache.org/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz
@@ -61,14 +60,14 @@ Extract the downloaded file.
 tar -xvzf hadoop-3.3.2.tar.gz
 ```
 
-#### Step 4: Configure Hadoop
+### Step 4: Configure Hadoop
 A Hadoop environment is configured by editing a set of configuration files:<br>
 ```
 bashrc, hadoop-env.sh, core-site.xml, hdfs-site.xml, mapred-site-xml and yarn-site.xml
 ```
 For more information, see the [article](https://medium.com/@festusmorumbasi/installing-hadoop-on-ubuntu-20-04-4610b6e0391e)
 
-#### Step 5: Start Hadoop
+### Step 5: Start Hadoop
 It is important to format the NameNode before starting Hadoop services for the first time:
 ```
 hdfs namenode -format
@@ -86,7 +85,7 @@ Verify all the running components
 jps
 ```
 
-#### Step 6: Access Hadoop UI from Browser
+### Step 6: Access Hadoop UI from Browser
 Use your preferred browser and navigate to your localhost URL or IP. The default port number `9870` gives you access to the Hadoop NameNode UI
 ```
 http://localhost:9870
@@ -101,6 +100,7 @@ http://localhost:8088
 ```
 
 ## Run MapReduce Program
+This program is used to count the frequency of each word in a given set of documents, in this case a given set of TXT files.
 
 #### Hadoop
 This is an example of using the Hadoop MapReduce JAR program on a 100 KB file
