@@ -9,6 +9,9 @@ SBD Group 3:
 - Zalfy Putra Rezky - 2106731453
 
 #### Download links
+- `100 KB` personae.txt
+- `1 MB` melville.txt
+- `10 MB` shakespeare.txt
 - [Text file: 100 MB](https://mattmahoney.net/dc/enwik8.zip)
 - [Text file: 1 GB](https://mattmahoney.net/dc/enwik9.zip)
 
@@ -35,7 +38,7 @@ Generate public and private key pairs
 ```
 ssh-keygen -t rsa
 ```
-Add the generated public key from id_rsa.pub to authorized_keys
+Add the generated public key from `id_rsa.pub` to `authorized_keys`
 ```
 sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
@@ -109,17 +112,20 @@ hdfs dfs -get /output-100kb/part-r-00000 /home/hadoop/Downloads/wordcount/output
 ```
 
 #### Python
-Open terminal
+Open integrated terminal in the directory
 ```
 python wordcount.py filename.txt
 ```
-for python 3 use python3
+for python 3 use `python3`
 
-## Analysis
+## Implementation
 
-#### Results
-
+#### Test Results
+![Table](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/table.png)
 
 #### Graph
 Comparing Hadoop and Python execution times for different file sizes using a plotting library like Matplotlib in Python
+![Plot](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/plot.png)
 
+#### Analysis
+#### Conclusion
