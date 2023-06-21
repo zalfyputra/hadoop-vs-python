@@ -8,12 +8,12 @@ SBD Group 3:
 - Laode Alif Ma'sum Sidrajat Raja Ika - 2106731213
 - Zalfy Putra Rezky - 2106731453
 
-#### Download links
+#### Text files for testing
 - `100 KB` personae.txt
 - `1 MB` melville.txt
 - `10 MB` shakespeare.txt
-- [Text file: 100 MB](https://mattmahoney.net/dc/enwik8.zip)
-- [Text file: 1 GB](https://mattmahoney.net/dc/enwik9.zip)
+- `100 MB` [enwik8.txt](https://mattmahoney.net/dc/enwik8.zip)
+- `1 GB` [enwik9.txt](https://mattmahoney.net/dc/enwik9.zip)
 
 ## Install Hadoop on Ubuntu 20.04
 By Festus Morumbasi<br>
@@ -112,11 +112,11 @@ hdfs dfs -get /output-100kb/part-r-00000 /home/hadoop/Downloads/wordcount/output
 ```
 
 #### Python
-Open integrated terminal in the directory
+Open the integrated terminal of the directory
 ```
 python wordcount.py filename.txt
 ```
-for python 3 use `python3`
+For python 3, change python to `python3`
 
 ## Implementation
 
@@ -124,8 +124,14 @@ for python 3 use `python3`
 ![Table](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/table.png)
 
 #### Graph
-Comparing Hadoop and Python execution times for different file sizes using a plotting library like Matplotlib in Python<br>
 ![Plot](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/plot.png)
 
 #### Analysis
+Jika membandingkan waktu eksekusi wordcount dengan python dan menggunakan Hadoop, maka wordcount python lebih cepat karena data yang dihitung disimpan dan dilakukan pada satu mesin atau server tunggal. Sehingga, hanya terjadi sedikit overhead terkait pengaturan dan komunikasi antar node dalam cluster seperti pada Hadoop. Dan untuk ukuran file yang relatif kecil (100 kb, 1 mb, 10 mb) maka wordcount dengan python dapat menyelesaikan tugas lebih cepat karena tidak melibatkan kompleksitas yang signifikan.
+
+Sedangkan, hadoop dirancang untuk memproses dan menganalisis data dalam skala besar dengan membagi tugas pemrosesan ke beberapa node dalam cluster sehingga dapat terjadi overhead yang signifikan walaupun penggunaan hadoop sangat efektif, khususnya pada platform terdistribusi dan data dalam ukuran besar. 
+
+Kinerja hadoop menjadi lebih lambat dibandingkan wordcount normal pada skala kecil karena membutuhkan waktu untuk menghubungkan node-node dalam cluster dan komunikasi antar node.
+
 #### Conclusion
+Untuk data yang besar dan membutuhkan pemprosesan dalam skala yang luas, Hadoop menjadi pilihan lebih baik karena lebih optimal. Sedangkan, pada kasus diatas, wordcount normal tidak melibatkan pengaturan dan komunikasi antar node yang kompleks sehingga kinerja lebih cepat dibandingkan menggunakan Hadoop.
