@@ -124,7 +124,7 @@ for python 3 use `python3`
 ![Table](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/table.png)
 
 #### Graph
-Comparing Hadoop and Python execution times for different file sizes using a plotting library like Matplotlib in Python
+Comparing Hadoop and Python execution times for different file sizes using a plotting library like Matplotlib in Python<br>
 ![Plot](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/plot.png)
 
 #### Analysis
