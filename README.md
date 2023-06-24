@@ -15,8 +15,6 @@ Made by SBD 01 Group 3:
 - `1 GB` [enwik9.txt](https://mattmahoney.net/dc/enwik9.zip)
 
 ## Install Hadoop on Ubuntu 20.04
-By Festus Morumbasi<br>
-https://medium.com/@festusmorumbasi/installing-hadoop-on-ubuntu-20-04-4610b6e0391e
 
 ### Step 1: Install Java and other dependencies
 Update system
@@ -119,6 +117,15 @@ python wordcount.py filename.txt
 For python 3, change python to `python3`
 
 ## Implementation
+#### Device Specification (VirtualBox)
+
+| Specification | Description       |
+|---------------|-------------------|
+| Prosesor      | AMD Ryzen 7 5800H |
+| Core          | 8-core            |
+| RAM           | 28 GB             |
+| Storage       | 64 GB             |
+| OS            | Ubuntu 20.04      |
 
 #### Test Results
 ![Table](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/table.png)
@@ -135,3 +142,6 @@ Kinerja hadoop menjadi lebih lambat dibandingkan wordcount normal pada skala kec
 
 #### Conclusion
 Untuk data yang besar dan membutuhkan pemprosesan dalam skala yang luas, Hadoop menjadi pilihan lebih baik karena lebih optimal. Sedangkan, pada kasus diatas, wordcount normal tidak melibatkan pengaturan dan komunikasi antar node yang kompleks sehingga kinerja lebih cepat dibandingkan menggunakan Hadoop.
+
+#### References
+[Install Hadoop on Ubuntu 20.04](https://medium.com/@festusmorumbasi/installing-hadoop-on-ubuntu-20-04-4610b6e0391e)
