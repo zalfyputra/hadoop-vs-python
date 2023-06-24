@@ -1,7 +1,7 @@
 # Hadoop vs Python
 This project aims to compare the performance and scalability of Word Count MapReduce programs implemented in Hadoop and Python, focusing on various data sizes. By analyzing the execution time and resource utilization of both implementations, we seek to understand how these technologies handle different data volumes.
 
-Made by SBD 01 Group 3:
+Made by K1 Group 3:
 - Cecilia Inez Reva Manurung - 2106636994
 - Gemilang Bagas Ramadhani - 2006535205
 - Laode Alif Ma'sum Sidrajat Raja Ika - 2106731213
@@ -130,7 +130,7 @@ For python 3, change python to `python3`
 #### Test Results
 ![Table](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/table.png)
 
-#### Graph
+#### Visualization
 ![Plot](https://raw.githubusercontent.com/zalfyputra/hadoop-vs-python/main/img/plot.png)
 
 #### Analysis
